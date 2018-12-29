@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='js/jquery-1.8.3.js'></script>
+	<style>
+		*{
+			padding: 0px;margin: 0px;
+		}
+		body{
+			background-image: url('image/dl.jpg');background-repeat: no-repeat;background-attachment: fixed;
+		}
+		.div_top{
+			width:100%;height:36px;background-color: #EEEEEE;
+		}
+		.tel{
+			margin-left: 377px;line-height: 36px;font-size: 14px;display: inline;
+		}
+		.tel ~ a{
+			color:#333;font-size: 14px;text-decoration: none;margin-left: 516px;line-height: 36px;
+		}
+		.tel ~ a ~ p{
+			width:211px;height: 26px;display: inline-block;background-color: #fff;margin-left: 15px;
+		}
+		.tel ~ a ~ p img{
+			margin-left: 15px;position: relative;top: 4px;
+		}
+		.tel ~ a ~ p input[type='text']{
+			outline: none;height: 80%;border:none;
+		}
+		.tel ~ a ~ p input[type='button']{
+			float: left;position: absolute;width: 90px;height: 26px;border:none;background-color: #00669f;color: white;margin-left: 24px;font-size: 14px;
+		}
+		.logo{
+			width: 100%;height: 100px;background-color: white;position: absolute;
+		}
+		.logo img{
+			margin-top: 15px;margin-left: 377px;position: absolute;	
+		}
+		/* 导航栏动画开始 */
+		.ani{
+			width: 800px;height: 60px;margin-left: 800px;margin-top: 25px;
+		}
+		/* 第一个小框中的内容 */
+		.div1{
+			width: 66px;height: 60px;position: absolute;cursor: pointer;
+		}
+		.divs1{
+			text-align: center;position: relative;font-size: 16px;color: #333333;top: 5px;
+		}
+		.divs2{
+			text-align: center;position: relative;font-size: 14px;color: #999;top: 5px;
+		}
+		.divs3{
+			width: 30px;height: 2px;background-color: #00669f;position: absolute;margin-left: 18px;bottom: 7px;display: none;
+		}
+		/* 第二个小框以及后面框 */
+		.div2{
+			width: 66px;height: 60px;position: absolute;cursor: pointer;margin-left: 95px;
+		}
+		.div3{
+			width: 66px;height: 60px;position: absolute;cursor: pointer;margin-left: 195px;
+		}
+		.div4{
+			width: 66px;height: 60px;position: absolute;cursor: pointer;margin-left: 295px;
+		}
+		.div5{
+			width: 66px;height: 60px;position: absolute;cursor: pointer;margin-left: 395px;
+		}
+		.div6{
+			width: 66px;height: 60px;position: absolute;cursor: pointer;margin-left: 495px;
+		}
+		.div7{
+			width: 66px;height: 60px;position: absolute;cursor: pointer;margin-left: 595px;
+		}
+		.div8{
+			width: 66px;height: 60px;position: absolute;cursor: pointer;margin-left: 695px;
+		}
+		.pic{
+			width: 100%;/* height: 600px; */margin-top: 100px;
+		}
+		.picc{
+			width: 100%;height: 650px;background-color: white;/* padding-top: 100px; */
+		}
+		.pic1{
+			display: block;
+		}
+		.pic2{
+			display: none;
+		}
+		.pic3{
+			display: none;
+		}
+		.news{
+			font-size: 30px;color: #0066a0;text-align: center;padding-top: 70px;
+		}
+		.xian1{
+			width: 80px;height: 1px;background-color: #0066a0;position: absolute;left: 770px;margin-top: -15px;
+		}
+		.xian2{
+			width: 80px;height: 1px;background-color: #0066a0;position: absolute;left: 1050px;margin-top: -15px;
+		}
+		.kuai1{
+			width: 7px;height: 7px;border: 1px solid #0066a0;transform: rotate(45deg);position: absolute;left: 850px;margin-top: -18px;
+		}
+		.kuai2{
+			width: 7px;height: 7px;border: 1px solid #0066a0;transform: rotate(45deg);position: absolute;left: 1040px;margin-top: -18px;
+		}
+		.picc p{
+			text-align: center;font-size: 18px;color: #666;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+		<div class='div_top'>
+			<div class='tel'>您好，欢迎访问沈阳职业院校技能大赛！</div>
+			<a href="#">在线报名</a>
+			<p class='p'><img src="image/ser_70.jpg" alt="">
+				<input type="text">
+				<input type="button" value='信息查询'>
+			</p>
+		</div>
+	</form>
+	<div class='logo'>
+		<img src="image/logo_03.jpg" alt="">
+		<div class='ani'>	
+			<div class='div1'>
+				<div class='divs1'>网站首页</div>
+				<div class='divs2'>home</div>
+				<div class='divs3'></div>
+			</div>
+			<div class='div2'>
+				<div class='divs1'>新闻通知</div>
+				<div class='divs2'>news</div>
+				<div class='divs3'></div>
+			</div>
+			<div class='div3'>
+				<div class='divs1'>大赛文件</div>
+				<div class='divs2'>file</div>
+				<div class='divs3'></div>
+			</div>
+			<div class='div4'>
+				<div class='divs1'>赛程赛果</div>
+				<div class='divs2'>course</div>
+				<div class='divs3'></div>
+			</div>
+			<div class='div5'>
+				<div class='divs1'>素材下载</div>
+				<div class='divs2'>download</div>
+				<div class='divs3'></div>
+			</div>
+			<div class='div6'>
+				<div class='divs1'>成果转化</div>
+				<div class='divs2'>translate</div>
+				<div class='divs3'></div>
+			</div>
+			<div class='div7'>
+				<div class='divs1'>报名平台</div>
+				<div class='divs2'>enroll</div>
+				<div class='divs3'></div>
+			</div>
+			<div class='div8'>
+				<div class='divs1'>联系我们</div>
+				<div class='divs2'>contact</div>
+				<div class='divs3'></div>
+			</div>
+			
+		</div>
+	</div>
+	<div class='pic'>
+		<img class='pic1' src="image/1.jpg" alt="">
+		<img class='pic2' src="image/2.jpg" alt="">
+		<img class='pic3' src="image/3.jpg" alt="">
+	</div>
+	<div class='picc'>
+
+		<div class='news'>新闻通知</div>
+		<div class='kuai1'></div>
+		<div class='kuai2'></div>
+		<div class='xian1'></div>
+		<div class='xian2'></div>
+		<p>EVENT ANNOUNCEMENT</p>
+	</div>
+
+	<div>11s1 <br>111 <br>1</div>
+
+	
+	
+</body>
+</html>
+<script>
+	a=1;b=1;c=1;
+	for(i=1;i<=8;i++){
+		$(".div"+i).mouseenter(function(){
+			$(this).find(".divs1").animate({"top":"25px"},300);
+			$(this).find(".divs2").animate({"top":"-18px"},300);
+			$(this).find(".divs3").css("display","block");
+		}).mouseleave(function(){
+			$(this).find(".divs1").animate({"top":"5px"},300);
+			$(this).find(".divs2").animate({"top":"5px"},300);
+
+			$(this).find(".divs3").css("display","none");
+		});
+	}
+	pictime=setInterval(function(){
+		
+		if(a==1 && b==1){
+			$(".pic1").css("display","block");
+			$(".pic2").css("display","none");
+			$(".pic3").css("display","none");
+			console.log(1);
+			b=0;
+		}else if(a==1 && b==0){
+			$(".pic1").css("display","none");
+			$(".pic2").css("display","block");
+			$(".pic3").css("display","none");
+			console.log(2);
+			a=0;
+		}else if(a==0 && b==0){
+			$(".pic1").css("display","none");
+			$(".pic2").css("display","none");
+			$(".pic3").css("display","block");
+			console.log(3);
+			a=1;b=1;
+		}
+	},2000);
+</script>
